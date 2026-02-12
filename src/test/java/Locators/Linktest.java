@@ -7,16 +7,20 @@ public class Linktest {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\vincy\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		ChromeDriver obj= new ChromeDriver();
-		obj.get("https://www.youtube.com/");
+		obj.get("https://demo.automationtesting.in/Register.html");
 		
 		
 	//link Test
-		obj.findElement(By.linkText("Music")).click();
+		//obj.findElement(By.linkText("Music")).click();
 		
 	//PartialLink Test
 		//obj.findElement(By.partialLinkText("Imag")).click();
-		//obj.findElement(By.cssSelector("body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div.SDkEP > div.fM33ce.dRYYxd > button > div.bvUkz")).click();
-	}
+		
+		//css path
+		//obj.findElement(By.cssSelector("#header > nav > div > div.navbar-collapse.collapse.navbar-right > ul > li:nth-child(1) > a")).click();
 	
-
+	//Xpath
+		obj.findElement(By.xpath("//*[@id=\"header\"]/nav/div/div[2]/ul/li[7]/a")).click();
+	
+	}
 }
