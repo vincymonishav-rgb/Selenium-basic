@@ -8,8 +8,8 @@ public class URL_Test {
 		ChromeDriver obj= new ChromeDriver();
 		obj.get("https://www.leafground.com/dashboard.xhtml");
 		obj.manage().window().maximize();
-		int i=3;
-		for(i=0;i<4;i++) {
+		//int i=3;
+		for(int i=0;i<4;i++) {
 		obj.navigate().refresh();
 		}
 		Thread.sleep(2000);

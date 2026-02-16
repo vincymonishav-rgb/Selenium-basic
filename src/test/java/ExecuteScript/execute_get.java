@@ -9,7 +9,7 @@ public class execute_get {
 		obj.get("https://www.leafground.com/dashboard.xhtml");
 		
 		System.out.println(obj.executeScript("return document.title"));
-		System.out.println(obj.executeScript("return document.URL"));
+		//System.out.println(obj.executeScript("return document.URL"));
 	}
 
 }
